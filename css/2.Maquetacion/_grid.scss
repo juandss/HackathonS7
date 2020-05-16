@@ -1,0 +1,37 @@
+body {
+  //width: 300px;
+
+  padding: 1rem 2rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  border: 1px solid;
+
+  display: grid;
+  grid-gap: 1rem;
+
+  grid-template-columns: 20% 20% 20% 20%;
+
+  grid-template-areas: "header1 header1 header1 header1";
+
+  @media screen and (max-width: 799px) and (min-width: 400px) {
+    width: 500px;
+  }
+  @media screen and (max-width: 1199px) and (min-width: 800px) {
+    width: 600px;
+  }
+  @media screen and (max-width: 1600px) and (min-width: 1200px) {
+    width: 800px;
+  }
+}
+header {
+  grid-area: header1;
+}
+/*
+main {
+  grid-area: main1;
+}
+footer {
+  grid-area: footer1;
+}
+*/

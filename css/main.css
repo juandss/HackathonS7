@@ -1,0 +1,84 @@
+/*Arquitectura SMACSS*/
+body {
+  padding: 1rem 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20%;
+      grid-template-areas: "header1 header1 header1 header1";
+}
+
+@media screen and (max-width: 799px) and (min-width: 400px) {
+  body {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 800px) {
+  body {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1200px) {
+  body {
+    width: 800px;
+  }
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header1;
+}
+
+/*
+main {
+  grid-area: main1;
+}
+footer {
+  grid-area: footer1;
+}
+*/
+@font-face {
+  src: url("../../fonts/Helvetica.ttf");
+  font-family: "Helvetica";
+}
+
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav ul {
+  list-style: none;
+}
+
+.header nav li {
+  display: inline-block;
+}
+
+.header nav a {
+  display: block;
+}
+
+.header section {
+  background-color: skyblue;
+}
+/*# sourceMappingURL=main.css.map */
